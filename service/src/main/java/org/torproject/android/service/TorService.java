@@ -234,13 +234,10 @@ public final class TorService extends Service implements TorServiceConstants, Or
         mActionBroadcastReceiver = new ActionBroadcastReceiver();
         registerReceiver(mActionBroadcastReceiver, new IntentFilter(CMD_NEWNYM));
 
-        new Thread(new Runnable() {
-            public void run() {
-                if (setupTor()) {
-                    notifyIfConnectedToTorNetwork();
-                }
-            }
-        }).start();
+        if (setupTor()) {
+            mEventBroadcaster.broadcastNotice("Preparing Tor, please wait...");
+            notifyIfConnectedToTorNetwork();
+        }
 
         Log.i("TorService", "onCreate end");
     }
