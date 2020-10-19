@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Tor Browser</string>
   <string name="menu_settings">Zvamada</string>
   <string name="button_about">Maererano</string>
   <!--Welcome Wizard strings (DJH)-->

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Tor Browser</string>
   <string name="status_starting_up">Orbot está iniciándose...</string>
   <string name="status_activated">Conectado a la red Tor</string>
   <string name="status_disabled">\"Orbot está Desactivado</string>
